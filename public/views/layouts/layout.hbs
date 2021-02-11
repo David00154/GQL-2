@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/styles.css.css">
+    <title>{{  title }}</title>
+</head>
+<body>
+    {{!-- {{> header}} --}}
+
+    <nav class="top-0 flex items-center bg-white px-6 py-5 shadow-md flex-wrap w-full fixed left-0">
+  <div class="container mx-auto flex flex-wrap flex-row justify-between">
+
+    <!-- Brand -->
+    <a href="/#/" class="p-2 mr-4 inline-flex items-center">
+      <!-- <span class="text-3xl tracking-wide text-gray-700 font-semibold">
+        Binterest
+      </span> -->
+      <h2 class="roboto text-gray-900 font-semibold text-2xl">Panel</h2>
+    </a>
+
+    <!-- Menu-btn -->
+    {{!-- <button on:click={() => menuActive()}
+     style="outline: none;" class="rounded lg:hidden text-gray-700 inline-flex p-3">
+            <i class="material-icons text-3xl font-bold">menu</i>
+    </button> --}}
+
+    <!-- Nav Items -->
+    <div class="w-full inline-flex flex-row w-auto">
+
+        <div class="flex-row inline-flex flex">
+
+          <a style="outline: none;" href="/_admin/"
+            class="lg:inline-flex flex lg:w-auto text-lg font-normal mr-2
+            px-2 py-1  text-gray-900 
+            hover:text-white hover:bg-gray-900 roboto"
+            >
+            <span>Users</span>
+          </a>
+
+          <!-- Top up route -->
+          <a style="outline: none;" href="/_admin/top-up"
+            class="lg:inline-flex flex lg:w-auto text-lg font-normal mr-2
+            {$location === '/portal/dashboard' ? 'border-b-4 border-yellow-700' : 'border-b-0'}
+            px-2 py-1  text-gray-900 
+            hover:text-white hover:bg-gray-900 roboto"
+            >
+            <span>Top Up</span>
+          </a>
+          
+        </div>
+    </div>
+
+  </div>
+</nav>
+
+    <main style="margin-top: 150px;">
+        <section>
+            {{{ body }}}
+        </section>
+    </main>
+</body>
+</html>

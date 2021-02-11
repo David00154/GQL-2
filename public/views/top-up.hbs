@@ -1,0 +1,83 @@
+{{!-- {{> hero }} --}}
+
+{{!-- <section>
+    <div class="relative w-full" style="height: 90vh;">
+       <img src="/assets/img1.jpg" alt="" class="block w-full h-full">
+       <div class="absolute top-0 left-0 px-24 py-11">
+           <div class="flex flex-row justify-between">
+               
+                <h5 class="text-white text-3xl font-bold">BTC INVEST</h5>
+               
+               <ul class="flex flex-row">
+                   <li><a href="/" class="text-white font-semibold text-lg mr-4">HOME</a></li>
+                   <li><a href="/about" class="text-white font-semibold text-lg mr-4">ABOUT</a></li>
+                   <li><a href="/" class="text-white font-semibold text-lg mr-4">CONTACT US</a></li>
+                   <li><a href="/" class="text-white font-semibold text-lg mr-4">TERMS & CONDITIONS</a></li>
+                   <li><a href="/" class="text-white font-semibold text-lg mr-4">SERVICES</a></li>
+               </ul>
+           </div>
+           <section class="mt-28">
+               <h2 class="text-white text-4xl font-bold">
+                   btc-invest.io helps 
+                   <br> 
+                   your
+                   <br>
+                   Profit grow stable
+               </h2>
+
+               <p class="text-white font-semibold text-base mt-12">
+                   All you need to do is Enjoy the your Investment Grow daily. You don’t 
+                   <br>
+                   require any skill,you will able to withdraw instantly,earn 5%~15% referral 
+                   <br>
+                   commission,our team have strong strategic trading ability to help your 
+                   <br> 
+                   investment grow fast than bank.Your choice is your furture, start to earn
+                   <br> 
+                   at least 1% profit per day and your deposit is already included in daily 
+                   <br>
+                   payments.
+               </p>
+           </section>
+       </div>
+    </div>
+</section> --}}
+
+<main>
+	
+    <div class="flex flex-col text-center justify-center"  style="align-items: center; min-height: 100vh;" >
+            <div class="flex flex-row">
+                <div></div>
+                <div class="flex flex-col px-2 lg:mx-0 mx-4">
+                    <section class="my-4">
+                        <h3 class="font-bold text-2xl">ADMIN</h3>
+                        <p class="text-gray-600 pt-2">Increase user Earning</p>
+                    </section>
+
+                         {{!-- <span class="bg-red-500 border-4 border-red-400 text-white text-center p-2">{error_}</span> --}}
+
+                    <form class="flex flex-col" action="/_admin/upDateAccount" method="POST">
+    
+                        <div class="my-3 text-left">
+                            <!-- svelte-ignore a11y-label-has-associated-control -->
+                            <label style="font-size: 20px;" class="text-gray-900 font-normal mb-2 text-left">Id</label>
+                            <input placeholder="User Id" type="text" class="focus:outline-none w-full border-gray-500 focus:border-gray-800 transition duration-500 border-2 my-1 px-2 py-1" name="id">
+                        </div>
+    
+                        <div class="my-3 text-left">
+                            <!-- svelte-ignore a11y-label-has-associated-control -->
+                            <label style="font-size: 20px;" class="text-gray-900 font-normal mb-2 text-left">Award Earning</label>
+                            <input placeholder="Enter Earning" type="text" class="focus:outline-none w-full border-gray-500 focus:border-gray-800 transition duration-500 border-2 my-1 px-2 py-1" name="earning">
+                        </div>
+    
+                        <!-- {#if error_ !== ''}
+                            <span class="bg-red-500 border-4 border-red-400 text-white text-center p-2">{error_}</span>
+                        {/if} -->
+    
+                        <button class="bg-gray-600 mt-2 hover:bg-gray-900 text-white font-bold py-2 rounded shadow-lg hover:shadow-xl transition duration-200" type="submit">Award</button>
+    
+                    </form>
+                </div>
+            </div>
+    </div>
+    </main>
