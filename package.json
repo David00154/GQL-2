@@ -4,11 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "",
+    "start": "node server.js",
     "build:css": "postcss public/tailwind.css -o public/css/main.css"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.15.4"
   },
   "author": "",
   "license": "ISC",
