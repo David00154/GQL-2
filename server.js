@@ -27,6 +27,10 @@ app.use('/_admin', router)
 
 app.use('/api', router2)
 
-app.listen(PORT, () => {
-    console.log(`Server started on pot ${PORT}`)
-})
+app.listen(3000, () => {
+    console.log(`Server started on port ${3000}`)
+});
+
+
+
+module.exports = app;
